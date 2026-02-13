@@ -1,0 +1,39 @@
+Copyright (c) 2026 Sander Stepanov. All rights reserved.
+
+This repository contains two categories of material:
+
+Author's Source Code
+All Python files (*.py) and all non-Gutenberg original content are proprietary.
+No permission is granted to copy, execute, modify, distribute, or reuse this code
+for any purpose without explicit written permission from the author.
+
+Third-Party Public Domain Texts
+Text files originating from Project Gutenberg remain public domain.
+They are not covered by this license and retain their original terms.
+
+This license applies ONLY to the author's code and original material,
+NOT to Project Gutenberg texts included for evaluation or demonstration purposes.
+
+Exception — Dependency Listings
+
+The file requirements.txt (and similar dependency lists) contains only references
+to third-party software packages and does not constitute proprietary source code.
+It is not restricted by this license, although it does not grant permission to use
+the author's implementation
+
+
+Research Outputs and Logs
+
+Evaluation reports, analysis summaries, benchmark results, and structured
+research artifacts produced by the author are proprietary.
+
+However, this restriction does not apply to:
+
+raw software logs
+
+library error messages
+
+
+excerpts originating from public domain sources (e.g., Project Gutenberg)
+
+
