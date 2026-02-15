@@ -1,0 +1,687 @@
+AZURE ANN MISS-HUNTER (VECTOR-ONLY INDEX + STORE_TEXT SWITCH)
+Timestamp: 20260215_113302
+Run folder: E:\may10\LLM\Azure for LLM\my_code\AI_search_article_feb2026\gemini_feb15\runs\run_20260215_113302_woM_Rem_S_HEAD50_nCH700
+Index: index-eval-ablation-miss-hunter
+Total chunks indexed: 700
+K=5
+PERTURB_MODE: remove
+STORE_TEXT_MODE: head  head_chars=50
+Quantization: scalar
+Matryoshka local scoring: False  (effective_dims=1536)
+==============================================================================================================
+
+ERROR TYPE: ANN_BASE_MISS
+==============================================================================================================
+
+BASE 26/700  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk1514
+  query_kind: REMOVED
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk1514::REMOVED::empires@22__present@33__existing@41__world@57__governments@104__religions@121__different@138
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=10 requested_sets=10 max_unique_sets_possible=120 n_words_remove=7
+  removed_words_lower: empires,present,existing,world,governments,religions,different  removed_words: empires,present,existing,world,governments,religions,different (starts=22,33,41,57,104,121,138, ends=29,40,49,62,115,130,147)
+  query_text_hash: 92f6b01ba1823dc0  query_vector_hash: c2eba8bfe219701b
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): a view of the several empires at present existing in the world; it gave me an insight into the manners, governments, and religions of the different
+  Query preview(full): a view of the several at in the ; it gave me an insight into the manners, , and of the
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk332 | azure_score=0.637393 | stored: and on the present occasion he had a good deal of  ...
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4326 | azure_score=0.628585 | stored: giving them every opportunity to air their views,  ...
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk647 | azure_score=0.623088 | stored: Continuing thus, I came at length opposite to the  ...
+  [4] Pride and Prejudice - pg1342_chunk857 | azure_score=0.622415 | stored: before the gentlemen appeared. Their powers of con ...
+  [5] Pride and Prejudice - pg1342_chunk4935 | azure_score=0.620511 | stored: able to encounter his eyes, she might have seen ho ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk1514 | local_cos=0.686334 | full: a view of the several empires at present existing in the world; it gave me an insight into the manners, governments, and religions of the different
+  [2] Pride and Prejudice - pg1342_chunk332 | local_cos=0.431024 | full: and on the present occasion he had a good deal of curiosity as to the event of an evening which had raised such splendid expectations. He had rather
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4326 | local_cos=0.408850 | full: giving them every opportunity to air their views, with the result that the local orators, of whom there were usually more than a sufficiency, had an
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk647 | local_cos=0.395002 | full: Continuing thus, I came at length opposite to the inn at which the various diligences and carriages usually stopped. Here I paused, I knew not why;
+  [5] Pride and Prejudice - pg1342_chunk857 | local_cos=0.393232 | full: before the gentlemen appeared. Their powers of conversation were considerable. They could describe an entertainment with accuracy, relate an anecdote
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 26/700  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk1514
+  query_kind: REMOVED
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk1514::REMOVED::several@14__empires@22__existing@41__insight@78__governments@104__religions@121__different@138
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=10 requested_sets=10 max_unique_sets_possible=120 n_words_remove=7
+  removed_words_lower: several,empires,existing,insight,governments,religions,different  removed_words: several,empires,existing,insight,governments,religions,different (starts=14,22,41,78,104,121,138, ends=21,29,49,85,115,130,147)
+  query_text_hash: 8885104ed80781ea  query_vector_hash: 9ab317893ce0d5c9
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): a view of the several empires at present existing in the world; it gave me an insight into the manners, governments, and religions of the different
+  Query preview(full): a view of the at present in the world; it gave me an into the manners, , and of the
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk332 | azure_score=0.627382 | stored: and on the present occasion he had a good deal of  ...
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk268 | azure_score=0.619809 | stored: such sort of life as I had blundered into. I've se ...
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk1273 | azure_score=0.616958 | stored: so as to get in front of that stir, of that motion ...
+  [4] Heart of Darkness by Joseph Conrad - pg219_chunk847 | azure_score=0.607248 | stored: the world of himself. He was the most unstable kin ...
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk769 | azure_score=0.606929 | stored: from my improvement, to the science itself, with a ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk1514 | local_cos=0.703341 | full: a view of the several empires at present existing in the world; it gave me an insight into the manners, governments, and religions of the different
+  [2] Pride and Prejudice - pg1342_chunk332 | local_cos=0.405786 | full: and on the present occasion he had a good deal of curiosity as to the event of an evening which had raised such splendid expectations. He had rather
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk268 | local_cos=0.386290 | full: such sort of life as I had blundered into. I've seen the devil of violence, and the devil of greed, and the devil of hot desire; but, by all the
+  [4] Heart of Darkness by Joseph Conrad - pg219_chunk1273 | local_cos=0.379094 | full: so as to get in front of that stir, of that motion I had seen--if indeed I had seen anything. I was circumventing Kurtz as though it had been a
+  [5] Heart of Darkness by Joseph Conrad - pg219_chunk847 | local_cos=0.353377 | full: the world of himself. He was the most unstable kind of fool I had ever seen. He steered with no end of a swagger while you were by; but if he lost
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 26/700  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk1514
+  query_kind: REMOVED
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk1514::REMOVED::empires@22__present@33__world@57__insight@78__manners@95__governments@104__religions@121
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=10 requested_sets=10 max_unique_sets_possible=120 n_words_remove=7
+  removed_words_lower: empires,present,world,insight,manners,governments,religions  removed_words: empires,present,world,insight,manners,governments,religions (starts=22,33,57,78,95,104,121, ends=29,40,62,85,102,115,130)
+  query_text_hash: 9f791fc353876055  query_vector_hash: 68947308ec274c3f
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): a view of the several empires at present existing in the world; it gave me an insight into the manners, governments, and religions of the different
+  Query preview(full): a view of the several at existing in the ; it gave me an into the , , and of the different
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4326 | azure_score=0.625986 | stored: giving them every opportunity to air their views,  ...
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk1273 | azure_score=0.620838 | stored: so as to get in front of that stir, of that motion ...
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk268 | azure_score=0.618534 | stored: such sort of life as I had blundered into. I've se ...
+  [4] A Room with a View by E. M. Forster - pg2641_chunk1315 | azure_score=0.616323 | stored: ordered, adding, "and all the capitals different-- ...
+  [5] Pride and Prejudice - pg1342_chunk332 | azure_score=0.615852 | stored: and on the present occasion he had a good deal of  ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk1514 | local_cos=0.700674 | full: a view of the several empires at present existing in the world; it gave me an insight into the manners, governments, and religions of the different
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4326 | local_cos=0.402295 | full: giving them every opportunity to air their views, with the result that the local orators, of whom there were usually more than a sufficiency, had an
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk1273 | local_cos=0.389335 | full: so as to get in front of that stir, of that motion I had seen--if indeed I had seen anything. I was circumventing Kurtz as though it had been a
+  [4] Heart of Darkness by Joseph Conrad - pg219_chunk268 | local_cos=0.382993 | full: such sort of life as I had blundered into. I've seen the devil of violence, and the devil of greed, and the devil of hot desire; but, by all the
+  [5] A Room with a View by E. M. Forster - pg2641_chunk1315 | local_cos=0.377745 | full: ordered, adding, "and all the capitals different--one with dragons in the foliage, another approaching to the Ionian style, another introducing Mrs.
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 68/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk2195
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk2195::REMOVED::filipinos@0__tagálogs@49__troubles@81__nueva@93__ecija@99__following@121__statement@131
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=11 requested_sets=10 max_unique_sets_possible=330 n_words_remove=7
+  removed_words_lower: filipinos,tagálogs,troubles,nueva,ecija,following,statement  removed_words: Filipinos,Tagálogs,troubles,Nueva,Ecija,following,statement (starts=0,49,81,93,99,121,131, ends=9,57,89,98,104,130,140)
+  query_text_hash: 32c5be4a7dcc49e2  query_vector_hash: 7f4429af64c689b4
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): Filipinos, who might have offended them, but the Tagálogs! That there were other troubles in Nueva Ecija is shown by the following statement:- "On
+  Query preview(full): , who might have offended them, but the ! That there were other in is shown by the :- "On
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk1716 | azure_score=0.629214 | stored: of distrust; and though the suddenness of their re ...
+  [2] Pride and Prejudice - pg1342_chunk2666 | azure_score=0.628802 | stored: of noticing this civil reflection, but its meaning ...
+  [3] Pride and Prejudice - pg1342_chunk2417 | azure_score=0.624408 | stored: the house they could not be necessary; and it was  ...
+  [4] Common Sense by Thomas Paine - pg147_chunk751 | azure_score=0.622277 | stored: pleases. The Tories dared not have assembled offen ...
+  [5] Pride and Prejudice - pg1342_chunk3940 | azure_score=0.619232 | stored: on knowing more than the rest of us, that in Lydia ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk2195 | local_cos=0.574937 | full: Filipinos, who might have offended them, but the Tagálogs! That there were other troubles in Nueva Ecija is shown by the following statement:- "On
+  [2] Pride and Prejudice - pg1342_chunk1716 | local_cos=0.410044 | full: of distrust; and though the suddenness of their removal surprised her, she saw nothing in it really to lament: it was not to be supposed that their
+  [3] Pride and Prejudice - pg1342_chunk2666 | local_cos=0.409438 | full: of noticing this civil reflection, but its meaning did not escape, nor was it likely to conciliate her. "But it is not merely this affair," she
+  [4] Pride and Prejudice - pg1342_chunk2417 | local_cos=0.397866 | full: the house they could not be necessary; and it was not till Easter-day, almost a week after the gentlemen's arrival, that they were honoured by such
+  [5] Common Sense by Thomas Paine - pg147_chunk751 | local_cos=0.392905 | full: pleases. The Tories dared not have assembled offensively, had they known that their lives, by that act, were forfeited to the laws of the state. A
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 79/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4398
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4398::REMOVED::drafting@30__legislation@42__government@62__christian@84__tribes@94__learn@116__about@130
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: drafting,legislation,government,christian,tribes,learn,about  removed_words: drafting,legislation,government,Christian,tribes,learn,about (starts=30,42,62,84,94,116,130, ends=38,53,72,93,100,121,135)
+  query_text_hash: c0a81e87fce8c88f  query_vector_hash: 79161fc96cd54599
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): I had been intrusted with the drafting of legislation for the government of the non-Christian tribes, and wanted to learn as much about them as
+  Query preview(full): I had been intrusted with the of for the of the non- , and wanted to as much them as
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk1639 | azure_score=0.641154 | stored: combined with lofty sentiments and feelings, which ...
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1611 | azure_score=0.631986 | stored: and occasionally permitted them to be furnished su ...
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk1482 | azure_score=0.630606 | stored: I rather suspect he wanted me to take care of anot ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk38 | azure_score=0.629989 | stored: I must own I felt a little proud when my captain o ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk611 | azure_score=0.629559 | stored: to be a Plenipotentiary without authority, we had  ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4398 | local_cos=0.559608 | full: I had been intrusted with the drafting of legislation for the government of the non-Christian tribes, and wanted to learn as much about them as
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk1639 | local_cos=0.440184 | full: combined with lofty sentiments and feelings, which had for their object something out of self, accorded well with my experience among my protectors
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1611 | local_cos=0.417933 | full: and occasionally permitted them to be furnished supplies, for which they paid, was not cooperation. The fact that for a time their plans and his
+  [4] Heart of Darkness by Joseph Conrad - pg219_chunk1482 | local_cos=0.414148 | full: I rather suspect he wanted me to take care of another batch of his papers which, after his death, I saw the manager examining under the lamp. And the
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk38 | local_cos=0.412816 | full: I must own I felt a little proud when my captain offered me the second dignity in the vessel and entreated me to remain with the greatest
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 96/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1824
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1824::REMOVED::horde@0__indians@9__victory@28__deliberately@55__aguinaldo@90__occupy@111__capital@122
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: horde,indians,victory,deliberately,aguinaldo,occupy,capital  removed_words: horde,Indians,victory,deliberately,Aguinaldo,occupy,capital (starts=0,9,28,55,90,111,122, ends=5,16,35,67,99,117,129)
+  query_text_hash: d57470bd836f4e7a  query_vector_hash: 581cb5abd905c629
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): horde of Indians drunk with victory. That fate was now deliberately planned for the city. Aguinaldo planned to occupy the capital not as it had been
+  Query preview(full): of drunk with . That fate was now planned for the city. planned to the not as it had been
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Common Sense by Thomas Paine - pg147_chunk751 | azure_score=0.621003 | stored: pleases. The Tories dared not have assembled offen ...
+  [2] Pride and Prejudice - pg1342_chunk332 | azure_score=0.618594 | stored: and on the present occasion he had a good deal of  ...
+  [3] Pride and Prejudice - pg1342_chunk5089 | azure_score=0.617759 | stored: she was able to join the others with tolerable com ...
+  [4] Common Sense by Thomas Paine - pg147_chunk46 | azure_score=0.612701 | stored: in which he might rather be said to perish than to ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3165 | azure_score=0.609181 | stored: if they had the chance, [349] but among the person ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1824 | local_cos=0.583767 | full: horde of Indians drunk with victory. That fate was now deliberately planned for the city. Aguinaldo planned to occupy the capital not as it had been
+  [2] Common Sense by Thomas Paine - pg147_chunk751 | local_cos=0.389830 | full: pleases. The Tories dared not have assembled offensively, had they known that their lives, by that act, were forfeited to the laws of the state. A
+  [3] Pride and Prejudice - pg1342_chunk332 | local_cos=0.382889 | full: and on the present occasion he had a good deal of curiosity as to the event of an evening which had raised such splendid expectations. He had rather
+  [4] Pride and Prejudice - pg1342_chunk5089 | local_cos=0.381174 | full: she was able to join the others with tolerable composure. Everything was too recent for gaiety, but the evening passed tranquilly away; there was no
+  [5] Common Sense by Thomas Paine - pg147_chunk46 | local_cos=0.367495 | full: in which he might rather be said to perish than to die. Thus necessity, like a gravitating power, would soon form our newly arrived emigrants into
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 136/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3990
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3990::REMOVED::regard@25__prisoners@39__purpose@62__negotiations@81__aguinaldo's@102__government@114__american@133
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: regard,prisoners,purpose,negotiations,aguinaldo's,government,american  removed_words: regard,prisoners,purpose,negotiations,Aguinaldo's,government,American (starts=25,39,62,81,102,114,133, ends=31,48,69,93,113,124,141)
+  query_text_hash: 257bfef8a0d499dc  query_vector_hash: 312fb9cdfb17fb7c
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): of treating, not only in regard to the prisoners, but for the purpose of opening negotiations between Aguinaldo's government and the American
+  Query preview(full): of treating, not only in to the , but for the of opening between and the
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk3254 | azure_score=0.608586 | stored: treatment of herself, she endeavoured to forget wh ...
+  [2] Pride and Prejudice - pg1342_chunk1364 | azure_score=0.605094 | stored: odd to be entirely silent for half an hour togethe ...
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3080 | azure_score=0.601453 | stored: in themselves they felt that the labourers in the  ...
+  [4] Pride and Prejudice - pg1342_chunk2397 | azure_score=0.600304 | stored: for Mr. Collins was walking the whole morning with ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4582 | azure_score=0.599131 | stored: islands, devoting a much greater amount of time an ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3990 | local_cos=0.492340 | full: of treating, not only in regard to the prisoners, but for the purpose of opening negotiations between Aguinaldo's government and the American
+  [2] Pride and Prejudice - pg1342_chunk3254 | local_cos=0.356702 | full: treatment of herself, she endeavoured to forget what she could not overlook, and to banish from her thoughts that continual breach of conjugal
+  [3] Pride and Prejudice - pg1342_chunk1364 | local_cos=0.347650 | full: odd to be entirely silent for half an hour together; and yet, for the advantage of _some_, conversation ought to be so arranged as that they may have
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3080 | local_cos=0.337675 | full: in themselves they felt that the labourers in the fields, the merchants in the towns, were for the purpose of administering to their necessities and
+  [5] Pride and Prejudice - pg1342_chunk2397 | local_cos=0.333731 | full: for Mr. Collins was walking the whole morning within view of the lodges opening into Hunsford Lane, in order to have [Illustration: "The gentlemen
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 142/700  base_chunk_id: medical_research_report_chunk64
+  query_kind: REMOVED
+  query_id: medical_research_report_chunk64::REMOVED::aggressive@30__intervention@41__scans@69__revealed@75__primary@93__pancreas@114__stubbornly@139
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=12 requested_sets=10 max_unique_sets_possible=792 n_words_remove=7
+  removed_words_lower: aggressive,intervention,scans,revealed,primary,pancreas,stubbornly  removed_words: aggressive,intervention,scans,revealed,primary,pancreas,stubbornly (starts=30,41,69,75,93,114,139, ends=40,53,74,83,100,122,149)
+  query_text_hash: fd1e99e91fd5a2f2  query_vector_hash: 54b3cb552cea6681
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 2/5  Recall@5: 0.40
+  Base preview(full): at his advanced stage without aggressive intervention. Subsequent CT scans revealed that the primary tumor in his pancreas, which had been stubbornly
+  Query preview(full): at his advanced stage without . Subsequent CT that the tumor in his , which had been
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk1160 | azure_score=0.594075 | stored: as true as everything else in his life--and death. ...
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk252 | azure_score=0.591812 | stored: his care; and after the interment of his friend he ...
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk1409 | azure_score=0.590991 | stored: and peculiar--owing to his great abilities and to  ...
+  [4] Pride and Prejudice - pg1342_chunk1598 | azure_score=0.589570 | stored: without any self-reproach. This matter may be cons ...
+  [5] Pride and Prejudice - pg1342_chunk4166 | azure_score=0.589250 | stored: should be forwarded at the sole expense of his bro ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] medical_research_report_chunk64 | local_cos=0.799460 | full: at his advanced stage without aggressive intervention. Subsequent CT scans revealed that the primary tumor in his pancreas, which had been stubbornly
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5456 | local_cos=0.321184 | full: proved entirely ineffective. The disease promptly appeared in the provinces where the campaign against it was from the outset in charge of newly
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk1160 | local_cos=0.316548 | full: as true as everything else in his life--and death. He looked at least seven feet long. His covering had fallen off, and his body emerged from it
+  [4] medical_research_report_chunk43 | local_cos=0.313773 | full: months of meticulous deliberation, had granted approval with stringent stipulations, emphasizing patient safety and well-being above all other
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk252 | local_cos=0.310537 | full: his care; and after the interment of his friend he conducted her to Geneva and placed her under the protection of a relation. Two years after this
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 157/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5113
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5113::REMOVED::mountain@0__people@9__because@16__lowlanders@50__distinguishing@77__colour@128__elsewhere@135
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: mountain,people,because,lowlanders,distinguishing,colour,elsewhere  removed_words: mountain,people,because,lowlanders,distinguishing,colour,elsewhere (starts=0,9,16,50,77,128,135, ends=8,15,23,60,91,134,144)
+  query_text_hash: 177b018239d7bd71  query_vector_hash: 7e07636c03c68fbf
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): mountain people because in their attacks upon the lowlanders they wore, as a distinguishing mark, red trousers or a dash of red colour elsewhere
+  Query preview(full): in their attacks upon the they wore, as a mark, red trousers or a dash of red
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk1312 | azure_score=0.672686 | stored: black smoke into the air. In front of the first ra ...
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1361 | azure_score=0.643934 | stored: time they were looting the portions of the city wh ...
+  [3] A Room with a View by E. M. Forster - pg2641_chunk172 | azure_score=0.624550 | stored: which had been cut for some larger soldier. Beside ...
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1397 | azure_score=0.618085 | stored: had been confined for political crimes. On being a ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5195 | azure_score=0.614062 | stored: matched their fanatical bravery against the gallan ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5113 | local_cos=0.746782 | full: mountain people because in their attacks upon the lowlanders they wore, as a distinguishing mark, red trousers or a dash of red colour elsewhere
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk1312 | local_cos=0.513619 | full: black smoke into the air. In front of the first rank, along the river, three men, plastered with bright red earth from head to foot, strutted to and
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1361 | local_cos=0.447186 | full: time they were looting the portions of the city which they occupied, and as is abundantly shown by their own records were not confining their attacks
+  [4] A Room with a View by E. M. Forster - pg2641_chunk172 | local_cos=0.399022 | full: which had been cut for some larger soldier. Beside them walked officers, looking foolish and fierce, and before them went little boys, turning
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1397 | local_cos=0.381751 | full: had been confined for political crimes. On being asked the reason for their imprisonment they began by showing us their bodies from which blood still
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 157/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5113
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5113::REMOVED::mountain@0__people@9__because@16__lowlanders@50__distinguishing@77__trousers@102__elsewhere@135
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: mountain,people,because,lowlanders,distinguishing,trousers,elsewhere  removed_words: mountain,people,because,lowlanders,distinguishing,trousers,elsewhere (starts=0,9,16,50,77,102,135, ends=8,15,23,60,91,110,144)
+  query_text_hash: b2a115ed3e08477f  query_vector_hash: 2d34455a03257818
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): mountain people because in their attacks upon the lowlanders they wore, as a distinguishing mark, red trousers or a dash of red colour elsewhere
+  Query preview(full): in their attacks upon the they wore, as a mark, red or a dash of red colour
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk1312 | azure_score=0.656098 | stored: black smoke into the air. In front of the first ra ...
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1361 | azure_score=0.643724 | stored: time they were looting the portions of the city wh ...
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1397 | azure_score=0.616960 | stored: had been confined for political crimes. On being a ...
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5195 | azure_score=0.611874 | stored: matched their fanatical bravery against the gallan ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1907 | azure_score=0.610217 | stored: follows:- "On the night of February 2 they sent in ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5113 | local_cos=0.707345 | full: mountain people because in their attacks upon the lowlanders they wore, as a distinguishing mark, red trousers or a dash of red colour elsewhere
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk1312 | local_cos=0.476102 | full: black smoke into the air. In front of the first rank, along the river, three men, plastered with bright red earth from head to foot, strutted to and
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1361 | local_cos=0.446715 | full: time they were looting the portions of the city which they occupied, and as is abundantly shown by their own records were not confining their attacks
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1397 | local_cos=0.378945 | full: had been confined for political crimes. On being asked the reason for their imprisonment they began by showing us their bodies from which blood still
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5195 | local_cos=0.365734 | full: matched their fanatical bravery against the gallantry of the khaki-clad Filipino soldiers. Time and again a single officer and a handful of men have
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 235/700  base_chunk_id: story_1_chunk12
+  query_kind: REMOVED
+  query_id: story_1_chunk12::REMOVED::unknown@0__number@8__first@32__strange@46__short@87__watched@114__careful@126
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: unknown,number,first,strange,short,watched,careful  removed_words: Unknown,number,first,strange,short,watched,careful (starts=0,8,32,46,87,114,126, ends=7,14,37,53,92,121,133)
+  query_text_hash: 217c429c76251d46  query_vector_hash: f883644836ce9020
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): Unknown number. It would be the first of many strange calls that week. The message was short: 'Your work is being watched. Be careful what you
+  Query preview(full): . It would be the of many calls that week. The message was : 'Your work is being . Be what you
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk1352 | azure_score=0.614780 | stored: from some newspaper article? He had been writing f ...
+  [2] Pride and Prejudice - pg1342_chunk1727 | azure_score=0.599062 | stored: generally brings, and that your beaux will be so n ...
+  [3] Pride and Prejudice - pg1342_chunk3076 | azure_score=0.598553 | stored: _her_, of the regiment's approaching removal, was  ...
+  [4] A Room with a View by E. M. Forster - pg2641_chunk466 | azure_score=0.597426 | stored: this part, and called in his deep voice: 'Quite so ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5166 | azure_score=0.596816 | stored: special service of this kind, have performed their ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] story_1_chunk12 | local_cos=0.643040 | full: Unknown number. It would be the first of many strange calls that week. The message was short: 'Your work is being watched. Be careful what you
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk1352 | local_cos=0.373286 | full: from some newspaper article? He had been writing for the papers and meant to do so again, 'for the furthering of my ideas. It's a duty.' "His was an
+  [3] Pride and Prejudice - pg1342_chunk1727 | local_cos=0.331076 | full: generally brings, and that your beaux will be so numerous as to prevent your feeling the loss of the three of whom we shall deprive you.' "It is
+  [4] Pride and Prejudice - pg1342_chunk3076 | local_cos=0.328823 | full: _her_, of the regiment's approaching removal, was indeed beyond expression. In a fortnight they were to go, and once gone, she hoped there could be
+  [5] A Room with a View by E. M. Forster - pg2641_chunk466 | local_cos=0.325475 | full: this part, and called in his deep voice: 'Quite so, quite so! I honour the woman for her Irish visit.' The woman! I tell things so badly; but you see
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 250/700  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk2817
+  query_kind: REMOVED
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk2817::REMOVED::strange@25__terrific@37__story@46__margaret@53__blood@88__congeal@94__curdles@140
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: strange,terrific,story,margaret,blood,congeal,curdles  removed_words: strange,terrific,story,Margaret,blood,congeal,curdles (starts=25,37,46,53,88,94,140, ends=32,45,51,61,93,101,147)
+  query_text_hash: eeae6d588a97b6d5  query_vector_hash: 0247966a922e9fa9
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  Query preview(full): 17--. You have read this and , ; and do you not feel your with horror, like that which even now
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk1022 | azure_score=0.663354 | stored: was condemned. I cannot pretend to describe what I ...
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk1774 | azure_score=0.653864 | stored: trembled violently, apprehending some dreadful mis ...
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk1263 | azure_score=0.629747 | stored: descend; we entered the hut, the fiend with an air ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk3021 | azure_score=0.622722 | stored: desire against me a vengeance greater than that wh ...
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk850 | azure_score=0.622422 | stored: over his untimely loss! To die so miserably; to fe ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk2817 | local_cos=0.785327 | full: 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk1022 | local_cos=0.492625 | full: was condemned. I cannot pretend to describe what I then felt. I had before experienced sensations of horror, and I have endeavoured to bestow upon
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk1774 | local_cos=0.470303 | full: trembled violently, apprehending some dreadful misfortune. The inside of the cottage was dark, and I heard no motion; I cannot describe the agony of
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk1263 | local_cos=0.412718 | full: descend; we entered the hut, the fiend with an air of exultation, I with a heavy heart and depressed spirits. But I consented to listen, and seating
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk3021 | local_cos=0.393918 | full: desire against me a vengeance greater than that which I feel. Blasted as thou wert, my agony was still superior to thine, for the bitter sting of
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 250/700  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk2817
+  query_kind: REMOVED
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk2817::REMOVED::strange@25__terrific@37__story@46__margaret@53__congeal@94__horror@107__curdles@140
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: strange,terrific,story,margaret,congeal,horror,curdles  removed_words: strange,terrific,story,Margaret,congeal,horror,curdles (starts=25,37,46,53,94,107,140, ends=32,45,51,61,101,113,147)
+  query_text_hash: 04f6ed587ba8e644  query_vector_hash: f5921d4fc7c105b1
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  Query preview(full): 17--. You have read this and , ; and do you not feel your blood with , like that which even now
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk3021 | azure_score=0.627051 | stored: desire against me a vengeance greater than that wh ...
+  [2] A Room with a View by E. M. Forster - pg2641_chunk2620 | azure_score=0.618714 | stored: waiting for contradiction. "You love the boy body  ...
+  [3] The King in Yellow by Robert W. Chambers  - pg8492_chunk1152 | azure_score=0.618161 | stored: of a soul who could fascinate and paralyze human c ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk1022 | azure_score=0.615948 | stored: was condemned. I cannot pretend to describe what I ...
+  [5] Heart of Darkness by Joseph Conrad - pg219_chunk1086 | azure_score=0.615229 | stored: filled his life, occupied his thoughts, swayed his ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk2817 | local_cos=0.732816 | full: 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk3021 | local_cos=0.405153 | full: desire against me a vengeance greater than that which I feel. Blasted as thou wert, my agony was still superior to thine, for the bitter sting of
+  [3] A Room with a View by E. M. Forster - pg2641_chunk2620 | local_cos=0.383557 | full: waiting for contradiction. "You love the boy body and soul, plainly, directly, as he loves you, and no other word expresses it. You won't marry the
+  [4] The King in Yellow by Robert W. Chambers  - pg8492_chunk1152 | local_cos=0.381850 | full: of a soul who could fascinate and paralyze human creatures with such words,--words understood by the ignorant and wise alike, words which are more
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk1022 | local_cos=0.376840 | full: was condemned. I cannot pretend to describe what I then felt. I had before experienced sensations of horror, and I have endeavoured to bestow upon
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 250/700  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk2817
+  query_kind: REMOVED
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk2817::REMOVED::strange@25__story@46__margaret@53__blood@88__congeal@94__which@125__curdles@140
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: strange,story,margaret,blood,congeal,which,curdles  removed_words: strange,story,Margaret,blood,congeal,which,curdles (starts=25,46,53,88,94,125,140, ends=32,51,61,93,101,130,147)
+  query_text_hash: e437b4fc909e9ec0  query_vector_hash: ba171fc2450a864b
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  Query preview(full): 17--. You have read this and terrific , ; and do you not feel your with horror, like that even now
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk1022 | azure_score=0.654391 | stored: was condemned. I cannot pretend to describe what I ...
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk1774 | azure_score=0.653228 | stored: trembled violently, apprehending some dreadful mis ...
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk850 | azure_score=0.628160 | stored: over his untimely loss! To die so miserably; to fe ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk1263 | azure_score=0.625364 | stored: descend; we entered the hut, the fiend with an air ...
+  [5] A Room with a View by E. M. Forster - pg2641_chunk2563 | azure_score=0.624049 | stored: he was twelve and she turned round. She thought it ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk2817 | local_cos=0.800691 | full: 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk1022 | local_cos=0.472046 | full: was condemned. I cannot pretend to describe what I then felt. I had before experienced sensations of horror, and I have endeavoured to bestow upon
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk1774 | local_cos=0.468944 | full: trembled violently, apprehending some dreadful misfortune. The inside of the cottage was dark, and I heard no motion; I cannot describe the agony of
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk850 | local_cos=0.408434 | full: over his untimely loss! To die so miserably; to feel the murderer's grasp! How much more a murdered that could destroy radiant innocence! Poor little
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk1263 | local_cos=0.401728 | full: descend; we entered the hut, the fiend with an air of exultation, I with a heavy heart and depressed spirits. But I consented to listen, and seating
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 250/700  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk2817
+  query_kind: REMOVED
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk2817::REMOVED::strange@25__terrific@37__story@46__margaret@53__congeal@94__horror@107__which@125
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: strange,terrific,story,margaret,congeal,horror,which  removed_words: strange,terrific,story,Margaret,congeal,horror,which (starts=25,37,46,53,94,107,125, ends=32,45,51,61,101,113,130)
+  query_text_hash: 9f588a9944084335  query_vector_hash: 3c053424f1281c9e
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  Query preview(full): 17--. You have read this and , ; and do you not feel your blood with , like that even now curdles
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk1022 | azure_score=0.618696 | stored: was condemned. I cannot pretend to describe what I ...
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk3021 | azure_score=0.618427 | stored: desire against me a vengeance greater than that wh ...
+  [3] The King in Yellow by Robert W. Chambers  - pg8492_chunk2545 | azure_score=0.613239 | stored: she cried. Her parted lips burned scarlet. The car ...
+  [4] A Room with a View by E. M. Forster - pg2641_chunk2620 | azure_score=0.611803 | stored: waiting for contradiction. "You love the boy body  ...
+  [5] A Room with a View by E. M. Forster - pg2641_chunk565 | azure_score=0.610829 | stored: blood. There! I'm glad I've told you; and all the  ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk2817 | local_cos=0.783956 | full: 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk1022 | local_cos=0.384013 | full: was condemned. I cannot pretend to describe what I then felt. I had before experienced sensations of horror, and I have endeavoured to bestow upon
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk3021 | local_cos=0.382865 | full: desire against me a vengeance greater than that which I feel. Blasted as thou wert, my agony was still superior to thine, for the bitter sting of
+  [4] The King in Yellow by Robert W. Chambers  - pg8492_chunk2545 | local_cos=0.368867 | full: she cried. Her parted lips burned scarlet. The car shook and shivered, and the fields streamed by like an emerald torrent. He caught the excitement,
+  [5] A Room with a View by E. M. Forster - pg2641_chunk2620 | local_cos=0.365524 | full: waiting for contradiction. "You love the boy body and soul, plainly, directly, as he loves you, and no other word expresses it. You won't marry the
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 250/700  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk2817
+  query_kind: REMOVED
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk2817::REMOVED::strange@25__terrific@37__story@46__margaret@53__congeal@94__which@125__curdles@140
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: strange,terrific,story,margaret,congeal,which,curdles  removed_words: strange,terrific,story,Margaret,congeal,which,curdles (starts=25,37,46,53,94,125,140, ends=32,45,51,61,101,130,147)
+  query_text_hash: 3b39193e889a2424  query_vector_hash: 5c4144e04c2fcf3f
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  Query preview(full): 17--. You have read this and , ; and do you not feel your blood with horror, like that even now
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk1022 | azure_score=0.652911 | stored: was condemned. I cannot pretend to describe what I ...
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk1774 | azure_score=0.646356 | stored: trembled violently, apprehending some dreadful mis ...
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk3021 | azure_score=0.629546 | stored: desire against me a vengeance greater than that wh ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk850 | azure_score=0.628050 | stored: over his untimely loss! To die so miserably; to fe ...
+  [5] The King in Yellow by Robert W. Chambers  - pg8492_chunk2545 | azure_score=0.621264 | stored: she cried. Her parted lips burned scarlet. The car ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk2817 | local_cos=0.821402 | full: 17--. You have read this strange and terrific story, Margaret; and do you not feel your blood congeal with horror, like that which even now curdles
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk1022 | local_cos=0.468697 | full: was condemned. I cannot pretend to describe what I then felt. I had before experienced sensations of horror, and I have endeavoured to bestow upon
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk1774 | local_cos=0.452596 | full: trembled violently, apprehending some dreadful misfortune. The inside of the cottage was dark, and I heard no motion; I cannot describe the agony of
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk3021 | local_cos=0.411317 | full: desire against me a vengeance greater than that which I feel. Blasted as thou wert, my agony was still superior to thine, for the bitter sting of
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk850 | local_cos=0.408231 | full: over his untimely loss! To die so miserably; to feel the murderer's grasp! How much more a murdered that could destroy radiant innocence! Poor little
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 276/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk611
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk611::REMOVED::plenipotentiary@8__authority@32__better@50__employ@61__frankly@84__action@115__unwisdom@133
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: plenipotentiary,authority,better,employ,frankly,action,unwisdom  removed_words: Plenipotentiary,authority,better,employ,frankly,action,unwisdom (starts=8,32,50,61,84,115,133, ends=23,41,56,67,91,121,141)
+  query_text_hash: c948f7001054f587  query_vector_hash: f93af5f5fc6ab3c3
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): to be a Plenipotentiary without authority, we had better not employ him any more--I frankly cannot understand your action, as to its unwisdom I have
+  Query preview(full): to be a without , we had not him any more--I cannot understand your , as to its I have
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk493 | azure_score=0.669059 | stored: I did not see--you understand. He was just a word  ...
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk656 | azure_score=0.637045 | stored: was not comprised in the noble art of book-keeping ...
+  [3] Pride and Prejudice - pg1342_chunk5043 | azure_score=0.632135 | stored: as to be always coming here? I had no notion but h ...
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk7046 | azure_score=0.628663 | stored: mentioned, have not the slightest pity and worry u ...
+  [5] Common Sense by Thomas Paine - pg147_chunk95 | azure_score=0.626719 | stored: to the description of some thing which either cann ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk611 | local_cos=0.511502 | full: to be a Plenipotentiary without authority, we had better not employ him any more--I frankly cannot understand your action, as to its unwisdom I have
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk493 | local_cos=0.505340 | full: I did not see--you understand. He was just a word for me. I did not see the man in the name any more than you do. Do you see him? Do you see the
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk656 | local_cos=0.430530 | full: was not comprised in the noble art of book-keeping; and, indeed, I believe I left him incredulous to the last, for his constant answer to my
+  [4] Pride and Prejudice - pg1342_chunk5043 | local_cos=0.417619 | full: as to be always coming here? I had no notion but he would go a-shooting, or something or other, and not disturb us with his company. What shall we do
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk7046 | local_cos=0.409908 | full: mentioned, have not the slightest pity and worry us to the extent of having kept us in our houses a day and a night without anything to eat, not even
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 276/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk611
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk611::REMOVED::plenipotentiary@8__authority@32__better@50__employ@61__cannot@92__action@115__unwisdom@133
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: plenipotentiary,authority,better,employ,cannot,action,unwisdom  removed_words: Plenipotentiary,authority,better,employ,cannot,action,unwisdom (starts=8,32,50,61,92,115,133, ends=23,41,56,67,98,121,141)
+  query_text_hash: 539cc30073630a2a  query_vector_hash: f282656028e4cb92
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): to be a Plenipotentiary without authority, we had better not employ him any more--I frankly cannot understand your action, as to its unwisdom I have
+  Query preview(full): to be a without , we had not him any more--I frankly understand your , as to its I have
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk493 | azure_score=0.660660 | stored: I did not see--you understand. He was just a word  ...
+  [2] Pride and Prejudice - pg1342_chunk1727 | azure_score=0.640152 | stored: generally brings, and that your beaux will be so n ...
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk656 | azure_score=0.638064 | stored: was not comprised in the noble art of book-keeping ...
+  [4] The King in Yellow by Robert W. Chambers  - pg8492_chunk680 | azure_score=0.634908 | stored: know; Geneviève--the only comfort was that she wou ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk7046 | azure_score=0.633276 | stored: mentioned, have not the slightest pity and worry u ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk611 | local_cos=0.540894 | full: to be a Plenipotentiary without authority, we had better not employ him any more--I frankly cannot understand your action, as to its unwisdom I have
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk493 | local_cos=0.486328 | full: I did not see--you understand. He was just a word for me. I did not see the man in the name any more than you do. Do you see him? Do you see the
+  [3] Pride and Prejudice - pg1342_chunk1727 | local_cos=0.438120 | full: generally brings, and that your beaux will be so numerous as to prevent your feeling the loss of the three of whom we shall deprive you.' "It is
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk656 | local_cos=0.432815 | full: was not comprised in the noble art of book-keeping; and, indeed, I believe I left him incredulous to the last, for his constant answer to my
+  [5] The King in Yellow by Robert W. Chambers  - pg8492_chunk680 | local_cos=0.425002 | full: know; Geneviève--the only comfort was that she would never know. It seemed, as I thought it over, that I had found the meaning of that sense of
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 292/700  base_chunk_id: Heart of Darkness by Joseph Conrad - pg219_chunk1120
+  query_kind: REMOVED
+  query_id: Heart of Darkness by Joseph Conrad - pg219_chunk1120::REMOVED::teeth@0__continuously@33__endless@54__dream@73__eternal@87__slumber@95__disclosing@114
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=11 requested_sets=10 max_unique_sets_possible=330 n_words_remove=7
+  removed_words_lower: teeth,continuously,endless,dream,eternal,slumber,disclosing  removed_words: teeth,continuously,endless,dream,eternal,slumber,disclosing (starts=0,33,54,73,87,95,114, ends=5,45,61,78,94,102,124)
+  query_text_hash: 08185afa839c0fa6  query_vector_hash: b3637d841f73a121
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): teeth, was smiling, too, smiling continuously at some endless and jocose dream of that eternal slumber. "I am not disclosing any trade secrets. In
+  Query preview(full): , was smiling, too, smiling at some and jocose of that . "I am not any trade secrets. In
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk1422 | azure_score=0.629684 | stored: "I want to know," said she, with a countenance no  ...
+  [2] Pride and Prejudice - pg1342_chunk4982 | azure_score=0.618425 | stored: "Your surprise could not be greater than _mine_ in ...
+  [3] Pride and Prejudice - pg1342_chunk4935 | azure_score=0.615675 | stored: able to encounter his eyes, she might have seen ho ...
+  [4] The King in Yellow by Robert W. Chambers  - pg8492_chunk297 | azure_score=0.615358 | stored: the whole world." "And incidentally your own happi ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk680 | azure_score=0.613781 | stored: that he pardon my frankness. "The Admiral replied  ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk1120 | local_cos=0.686339 | full: teeth, was smiling, too, smiling continuously at some endless and jocose dream of that eternal slumber. "I am not disclosing any trade secrets. In
+  [2] Pride and Prejudice - pg1342_chunk1422 | local_cos=0.411945 | full: "I want to know," said she, with a countenance no less smiling than her sister's, "what you have learnt about Mr. Wickham. But perhaps you have been
+  [3] Pride and Prejudice - pg1342_chunk4982 | local_cos=0.382637 | full: "Your surprise could not be greater than _mine_ in being noticed by you. My conscience told me that I deserved no extraordinary politeness, and I
+  [4] Pride and Prejudice - pg1342_chunk4935 | local_cos=0.375922 | full: able to encounter his eyes, she might have seen how well the expression of heartfelt delight diffused over his face became him: but though she could
+  [5] The King in Yellow by Robert W. Chambers  - pg8492_chunk297 | local_cos=0.375036 | full: the whole world." "And incidentally your own happiness and prosperity as well as Mr. Wilde's?" "Exactly," I smiled. But I could have throttled him
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 369/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4871
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4871::REMOVED::instant@8__resignation@16__welch@47__faithful@56__efficient@69__employee@79__government@95
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=10 requested_sets=10 max_unique_sets_possible=120 n_words_remove=7
+  removed_words_lower: instant,resignation,welch,faithful,efficient,employee,government  removed_words: instant,resignation,Welch,faithful,efficient,employee,government (starts=8,16,47,56,69,79,95, ends=15,27,52,64,78,87,105)
+  query_text_hash: cc56665be89bfb24  query_vector_hash: 08712591ecfdc564
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 2/5  Recall@5: 0.40
+  Base preview(full): for the instant resignation of Mr. Thomas Cary Welch, a faithful and efficient employee of the government, who had been for nearly ten years in the
+  Query preview(full): for the of Mr. Thomas Cary , a and of the , who had been for nearly ten years in the
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk2701 | azure_score=0.609770 | stored: which the consideration of his attachment had for  ...
+  [2] Pride and Prejudice - pg1342_chunk2914 | azure_score=0.608626 | stored: XXXVII. [Illustration] The two gentlemen left Rosi ...
+  [3] Pride and Prejudice - pg1342_chunk2417 | azure_score=0.606921 | stored: the house they could not be necessary; and it was  ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk287 | azure_score=0.605251 | stored: had not been long married, and their eldest child  ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk2430 | azure_score=0.605064 | stored: priests, but he succeeded in compelling a number o ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk4871 | local_cos=0.658939 | full: for the instant resignation of Mr. Thomas Cary Welch, a faithful and efficient employee of the government, who had been for nearly ten years in the
+  [2] A Room with a View by E. M. Forster - pg2641_chunk2435 | local_cos=0.382819 | full: have succeeded. The honours of the day rested with Mr. Beebe. By his tact and common sense, and by his influence as a clergyman--for a clergyman who
+  [3] Pride and Prejudice - pg1342_chunk2701 | local_cos=0.360043 | full: which the consideration of his attachment had for a moment excited. She continued in very agitating reflections till the sound of Lady Catherine's
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk252 | local_cos=0.358681 | full: his care; and after the interment of his friend he conducted her to Geneva and placed her under the protection of a relation. Two years after this
+  [5] Pride and Prejudice - pg1342_chunk2914 | local_cos=0.357060 | full: XXXVII. [Illustration] The two gentlemen left Rosings the next morning; and Mr. Collins having been in waiting near the lodges, to make them his
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 376/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3740
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3740::REMOVED::alone@0__hardly@11__blount@50__population@82__during@93__longer@102__thousand@135
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=13 requested_sets=10 max_unique_sets_possible=1716 n_words_remove=7
+  removed_words_lower: alone,hardly,blount,population,during,longer,thousand  removed_words: alone,hardly,Blount,population,during,longer,thousand (starts=0,11,50,82,93,102,135, ends=5,17,56,92,99,108,143)
+  query_text_hash: 3540fd7585f5b326  query_vector_hash: 568875471a256277
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 3/5  Recall@5: 0.60
+  Base preview(full): alone, are hardly consistent with those quoted by Blount as showing a decrease in population during a longer period of only fifty-four thousand four
+  Query preview(full): , are consistent with those quoted by as showing a decrease in a period of only fifty-four four
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk300 | azure_score=0.598163 | stored: seen from them that his expenses were exceeding hi ...
+  [2] Pride and Prejudice - pg1342_chunk4985 | azure_score=0.595467 | stored: you see that your reproofs had been attended to. H ...
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk265 | azure_score=0.595141 | stored: [9] On analyzing his statements we find that he is ...
+  [4] Pride and Prejudice - pg1342_chunk1364 | azure_score=0.590180 | stored: odd to be entirely silent for half an hour togethe ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk2643 | azure_score=0.586556 | stored: in the valley during this entire period, he cannot ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3740 | local_cos=0.660432 | full: alone, are hardly consistent with those quoted by Blount as showing a decrease in population during a longer period of only fifty-four thousand four
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk300 | local_cos=0.328144 | full: seen from them that his expenses were exceeding his income, which could only be 12,000 pesos a year, while he was living at the rate of 22,000, with
+  [3] Common Sense by Thomas Paine - pg147_chunk552 | local_cos=0.321459 | full: 35 60 14,197 496,895 40 50 10,606 424,240 45 40 7,558 340,110 58 20 3,710 215,180 85 Sloops, bombs and fireships, one with another, at } 2,000
+  [4] Pride and Prejudice - pg1342_chunk4985 | local_cos=0.320270 | full: you see that your reproofs had been attended to. How soon any other wishes introduced themselves, I can hardly tell, but I believe in about half an
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk265 | local_cos=0.319437 | full: [9] On analyzing his statements we find that he is discreetly non-committal as to exactly what were the expressed promises, nor does he make it so
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 420/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5744
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5744::REMOVED::filipino@0__physician@9__found@22__sanitary@60__regulations@69__little@99__desired@112
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: filipino,physician,found,sanitary,regulations,little,desired  removed_words: Filipino,physician,found,sanitary,regulations,little,desired (starts=0,9,22,60,69,99,112, ends=8,18,27,68,80,105,119)
+  query_text_hash: 66daa130191262b6  query_vector_hash: 6a181e4e4c420cec
+  ANN_has_base: False (rank=None) | LOCAL_has_base: False (rank=None)
+  Overlap@5: 5/5  Recall@5: 1.00
+  Base preview(full): Filipino physician. I found, as I had anticipated, that the sanitary regulations of his towns left little to be desired, but that they were
+  Query preview(full): . I , as I had anticipated, that the of his towns left to be , but that they were
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk3076 | azure_score=0.652086 | stored: _her_, of the regiment's approaching removal, was  ...
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk2149 | azure_score=0.648599 | stored: finished, that he might receive his companion. Wit ...
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3080 | azure_score=0.641826 | stored: in themselves they felt that the labourers in the  ...
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6661 | azure_score=0.640403 | stored: to send to his town a garrison of 100 men for its  ...
+  [5] Pride and Prejudice - pg1342_chunk1727 | azure_score=0.636887 | stored: generally brings, and that your beaux will be so n ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Pride and Prejudice - pg1342_chunk3076 | local_cos=0.466042 | full: _her_, of the regiment's approaching removal, was indeed beyond expression. In a fortnight they were to go, and once gone, she hoped there could be
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk2149 | local_cos=0.458073 | full: finished, that he might receive his companion. With this resolution I traversed the northern highlands and fixed on one of the remotest of the Orkneys
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3080 | local_cos=0.442175 | full: in themselves they felt that the labourers in the fields, the merchants in the towns, were for the purpose of administering to their necessities and
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6661 | local_cos=0.438918 | full: to send to his town a garrison of 100 men for its security. The governor replied that he would first consult the captain-general, and if the
+  [5] Pride and Prejudice - pg1342_chunk1727 | local_cos=0.430186 | full: generally brings, and that your beaux will be so numerous as to prevent your feeling the loss of the three of whom we shall deprive you.' "It is
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 420/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5744
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5744::REMOVED::filipino@0__physician@9__found@22__anticipated@38__sanitary@60__regulations@69__desired@112
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: filipino,physician,found,anticipated,sanitary,regulations,desired  removed_words: Filipino,physician,found,anticipated,sanitary,regulations,desired (starts=0,9,22,38,60,69,112, ends=8,18,27,49,68,80,119)
+  query_text_hash: e8eaf2e88dcc96e1  query_vector_hash: 7a4d3e145bb8617c
+  ANN_has_base: False (rank=None) | LOCAL_has_base: False (rank=None)
+  Overlap@5: 5/5  Recall@5: 1.00
+  Base preview(full): Filipino physician. I found, as I had anticipated, that the sanitary regulations of his towns left little to be desired, but that they were
+  Query preview(full): . I , as I had , that the of his towns left little to be , but that they were
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3080 | azure_score=0.644108 | stored: in themselves they felt that the labourers in the  ...
+  [2] The King in Yellow by Robert W. Chambers  - pg8492_chunk2407 | azure_score=0.642807 | stored: trust your word," he said pleasantly. V The month  ...
+  [3] Pride and Prejudice - pg1342_chunk3076 | azure_score=0.640204 | stored: _her_, of the regiment's approaching removal, was  ...
+  [4] Pride and Prejudice - pg1342_chunk1680 | azure_score=0.637749 | stored: and, I trust, I am resigned. Perhaps not the less  ...
+  [5] Pride and Prejudice - pg1342_chunk3462 | azure_score=0.637267 | stored: look at him, to see how he bore it; and was not wi ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3080 | local_cos=0.447436 | full: in themselves they felt that the labourers in the fields, the merchants in the towns, were for the purpose of administering to their necessities and
+  [2] The King in Yellow by Robert W. Chambers  - pg8492_chunk2407 | local_cos=0.444012 | full: trust your word," he said pleasantly. V The month passed quickly for Hastings, and left few definite impressions after it. It did leave some,
+  [3] Pride and Prejudice - pg1342_chunk3076 | local_cos=0.437722 | full: _her_, of the regiment's approaching removal, was indeed beyond expression. In a fortnight they were to go, and once gone, she hoped there could be
+  [4] Pride and Prejudice - pg1342_chunk1680 | local_cos=0.432161 | full: and, I trust, I am resigned. Perhaps not the less so from feeling a doubt of my positive happiness had my fair cousin honoured me with her hand; for
+  [5] Pride and Prejudice - pg1342_chunk3462 | local_cos=0.430931 | full: look at him, to see how he bore it; and was not without the expectation of his decamping as fast as he could from such disgraceful companions. That
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 420/700  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5744
+  query_kind: REMOVED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk5744::REMOVED::filipino@0__physician@9__found@22__anticipated@38__sanitary@60__regulations@69__towns@88
+  STORE_TEXT_MODE: head  head_chars=50
+  remove_meta: eligible_words=9 requested_sets=10 max_unique_sets_possible=36 n_words_remove=7
+  removed_words_lower: filipino,physician,found,anticipated,sanitary,regulations,towns  removed_words: Filipino,physician,found,anticipated,sanitary,regulations,towns (starts=0,9,22,38,60,69,88, ends=8,18,27,49,68,80,93)
+  query_text_hash: 4314d2ba47a7d19f  query_vector_hash: 103c379c90e65477
+  ANN_has_base: False (rank=None) | LOCAL_has_base: False (rank=None)
+  Overlap@5: 5/5  Recall@5: 1.00
+  Base preview(full): Filipino physician. I found, as I had anticipated, that the sanitary regulations of his towns left little to be desired, but that they were
+  Query preview(full): . I , as I had , that the of his left little to be desired, but that they were
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk1680 | azure_score=0.659157 | stored: and, I trust, I am resigned. Perhaps not the less  ...
+  [2] Pride and Prejudice - pg1342_chunk3462 | azure_score=0.647768 | stored: look at him, to see how he bore it; and was not wi ...
+  [3] Pride and Prejudice - pg1342_chunk1689 | azure_score=0.642543 | stored: himself, _his_ feelings were chiefly expressed, no ...
+  [4] The King in Yellow by Robert W. Chambers  - pg8492_chunk675 | azure_score=0.642348 | stored: for the right way, and with my feeble but determin ...
+  [5] Pride and Prejudice - pg1342_chunk332 | azure_score=0.640698 | stored: and on the present occasion he had a good deal of  ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Pride and Prejudice - pg1342_chunk1680 | local_cos=0.482904 | full: and, I trust, I am resigned. Perhaps not the less so from feeling a doubt of my positive happiness had my fair cousin honoured me with her hand; for
+  [2] Pride and Prejudice - pg1342_chunk3462 | local_cos=0.456683 | full: look at him, to see how he bore it; and was not without the expectation of his decamping as fast as he could from such disgraceful companions. That
+  [3] Pride and Prejudice - pg1342_chunk1689 | local_cos=0.443307 | full: himself, _his_ feelings were chiefly expressed, not by embarrassment or dejection, or by trying to avoid her, but by stiffness of manner and
+  [4] The King in Yellow by Robert W. Chambers  - pg8492_chunk675 | local_cos=0.442978 | full: for the right way, and with my feeble but determined fight against despair, I simply acquiesced in Jack's reticence, taking for granted that he was
+  [5] Pride and Prejudice - pg1342_chunk332 | local_cos=0.439180 | full: and on the present occasion he had a good deal of curiosity as to the event of an evening which had raised such splendid expectations. He had rather
+
+--------------------------------------------------------------------------------------------------------------
+
