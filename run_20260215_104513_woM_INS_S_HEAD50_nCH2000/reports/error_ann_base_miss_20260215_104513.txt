@@ -1,0 +1,411 @@
+AZURE ANN MISS-HUNTER (VECTOR-ONLY INDEX + STORE_TEXT SWITCH)
+Timestamp: 20260215_104513
+Run folder: E:\may10\LLM\Azure for LLM\my_code\AI_search_article_feb2026\gemini_feb15\runs\run_20260215_104513_woM_INS_S_HEAD50_nCH2000
+Index: index-eval-ablation-miss-hunter
+Total chunks indexed: 2000
+K=5
+PERTURB_MODE: insert
+STORE_TEXT_MODE: head  head_chars=50
+Quantization: scalar
+Matryoshka local scoring: False  (effective_dims=1536)
+==============================================================================================================
+
+ERROR TYPE: ANN_BASE_MISS
+==============================================================================================================
+
+BASE 668/2000  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3109
+  query_kind: ORIGINAL
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3109::ORIGINAL
+  STORE_TEXT_MODE: head  head_chars=50
+  query_text_hash: 6d33d680075f189d  query_vector_hash: a00f7cbad076f57b
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): oblong square piece of heavy wood divided into two parts, with a lock at each end and six or more holes in the middle to confine the feet of
+  Query preview(full): oblong square piece of heavy wood divided into two parts, with a lock at each end and six or more holes in the middle to confine the feet of
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] The King in Yellow by Robert W. Chambers  - pg8492_chunk1987 | azure_score=0.612163 | stored: cut him short; then blow after blow shook the door ...
+  [2] Frankenstein  The Modern Prometheus - pg84_chunk1562 | azure_score=0.603959 | stored: grated window in an unguarded part of the building ...
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk1238 | azure_score=0.601524 | stored: he turned round--'I say, haven't you a pair of sho ...
+  [4] Heart of Darkness by Joseph Conrad - pg219_chunk255 | azure_score=0.600645 | stored: and the short ends behind waggled to and fro like  ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk2607 | azure_score=0.599363 | stored: enclosure of cane to be made, put a pig into it--w ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3109 | local_cos=0.999999 | full: oblong square piece of heavy wood divided into two parts, with a lock at each end and six or more holes in the middle to confine the feet of
+  [2] The King in Yellow by Robert W. Chambers  - pg8492_chunk1987 | local_cos=0.366461 | full: cut him short; then blow after blow shook the doors, until there came a sharp snap, a clinking of metal and a triangular bit of iron fell inwards,
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk1562 | local_cos=0.343952 | full: grated window in an unguarded part of the building, which lighted the dungeon of the unfortunate Muhammadan, who, loaded with chains, waited in
+  [4] Heart of Darkness by Joseph Conrad - pg219_chunk1238 | local_cos=0.337231 | full: he turned round--'I say, haven't you a pair of shoes you could spare?' He raised one leg. 'Look.' The soles were tied with knotted strings sandalwise
+  [5] Heart of Darkness by Joseph Conrad - pg219_chunk255 | local_cos=0.335136 | full: and the short ends behind waggled to and fro like tails. I could see every rib, the joints of their limbs were like knots in a rope; each had an iron
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 668/2000  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3109
+  query_kind: INSERTED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3109::INSERTED::after10
+  STORE_TEXT_MODE: head  head_chars=50
+  insert_text: ' not at all ' after_word_requested=10 after_word_actual=10 word_count=29 insert_char_pos=56 appended_to_end=False
+  query_text_hash: 0e9fedd2ec1bbc2a  query_vector_hash: 603e211759d7f150
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): oblong square piece of heavy wood divided into two parts, with a lock at each end and six or more holes in the middle to confine the feet of
+  Query preview(full): oblong square piece of heavy wood divided into two parts not at all , with a lock at each end and six or more holes in the middle to confine the feet of
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] The King in Yellow by Robert W. Chambers  - pg8492_chunk1987 | azure_score=0.607823 | stored: cut him short; then blow after blow shook the door ...
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk1238 | azure_score=0.601834 | stored: he turned round--'I say, haven't you a pair of sho ...
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk255 | azure_score=0.601326 | stored: and the short ends behind waggled to and fro like  ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk1562 | azure_score=0.599892 | stored: grated window in an unguarded part of the building ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk2607 | azure_score=0.597358 | stored: enclosure of cane to be made, put a pig into it--w ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3109 | local_cos=0.984869 | full: oblong square piece of heavy wood divided into two parts, with a lock at each end and six or more holes in the middle to confine the feet of
+  [2] The King in Yellow by Robert W. Chambers  - pg8492_chunk1987 | local_cos=0.354741 | full: cut him short; then blow after blow shook the doors, until there came a sharp snap, a clinking of metal and a triangular bit of iron fell inwards,
+  [3] Heart of Darkness by Joseph Conrad - pg219_chunk1238 | local_cos=0.338195 | full: he turned round--'I say, haven't you a pair of shoes you could spare?' He raised one leg. 'Look.' The soles were tied with knotted strings sandalwise
+  [4] Heart of Darkness by Joseph Conrad - pg219_chunk255 | local_cos=0.337060 | full: and the short ends behind waggled to and fro like tails. I could see every rib, the joints of their limbs were like knots in a rope; each had an iron
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk1562 | local_cos=0.332801 | full: grated window in an unguarded part of the building, which lighted the dungeon of the unfortunate Muhammadan, who, loaded with chains, waited in
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 717/2000  base_chunk_id: Common Sense by Thomas Paine - pg147_chunk906
+  query_kind: ORIGINAL
+  query_id: Common Sense by Thomas Paine - pg147_chunk906::ORIGINAL
+  STORE_TEXT_MODE: head  head_chars=50
+  query_text_hash: 1b3dbee0f110fcf3  query_vector_hash: 6652d609e86baa8a
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): Bradford edition of Common Sense retains the original characteristics of the document--the author's use of capitalization (large and small),
+  Query preview(full): Bradford edition of Common Sense retains the original characteristics of the document--the author's use of capitalization (large and small),
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk24 | azure_score=0.621025 | stored: the most characteristic, the most eminently quinte ...
+  [2] Common Sense by Thomas Paine - pg147_chunk78 | azure_score=0.618763 | stored: English constitution, we shall find them to be the ...
+  [3] Common Sense by Thomas Paine - pg147_chunk85 | azure_score=0.605750 | stored: the commons, by being appointed for that purpose,  ...
+  [4] Pride and Prejudice - pg1342_chunk1948 | azure_score=0.604853 | stored: Collins's respectability, and Charlotte's prudent, ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk729 | azure_score=0.597822 | stored: for the United States should still be there, it wo ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Common Sense by Thomas Paine - pg147_chunk906 | local_cos=0.998358 | full: Bradford edition of Common Sense retains the original characteristics of the document--the author's use of capitalization (large and small),
+  [2] Pride and Prejudice - pg1342_chunk24 | local_cos=0.389352 | full: the most characteristic, the most eminently quintessential of its author's works; and for this contention in such narrow space as is permitted to me,
+  [3] Common Sense by Thomas Paine - pg147_chunk78 | local_cos=0.384186 | full: English constitution, we shall find them to be the base remains of two ancient tyrannies, compounded with some new republican materials. First.--The
+  [4] Common Sense by Thomas Paine - pg147_chunk85 | local_cos=0.349128 | full: the commons, by being appointed for that purpose, are either wiser or more worthy of confidence than the crown. But as the same constitution which
+  [5] Pride and Prejudice - pg1342_chunk1948 | local_cos=0.346555 | full: Collins's respectability, and Charlotte's prudent, steady character. Remember that she is one of a large family; that as to fortune it is a most
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 717/2000  base_chunk_id: Common Sense by Thomas Paine - pg147_chunk906
+  query_kind: INSERTED
+  query_id: Common Sense by Thomas Paine - pg147_chunk906::INSERTED::after10
+  STORE_TEXT_MODE: head  head_chars=50
+  insert_text: ' not at all ' after_word_requested=10 after_word_actual=10 word_count=20 insert_char_pos=72 appended_to_end=False
+  query_text_hash: f74a6aa494da2584  query_vector_hash: 39156846b6107756
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): Bradford edition of Common Sense retains the original characteristics of the document--the author's use of capitalization (large and small),
+  Query preview(full): Bradford edition of Common Sense retains the original characteristics of not at all  the document--the author's use of capitalization (large and small),
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Pride and Prejudice - pg1342_chunk24 | azure_score=0.620234 | stored: the most characteristic, the most eminently quinte ...
+  [2] Common Sense by Thomas Paine - pg147_chunk78 | azure_score=0.614917 | stored: English constitution, we shall find them to be the ...
+  [3] Common Sense by Thomas Paine - pg147_chunk85 | azure_score=0.605615 | stored: the commons, by being appointed for that purpose,  ...
+  [4] Pride and Prejudice - pg1342_chunk1948 | azure_score=0.603355 | stored: Collins's respectability, and Charlotte's prudent, ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk1618 | azure_score=0.602703 | stored: is born of insufficient and incomplete information ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Common Sense by Thomas Paine - pg147_chunk906 | local_cos=0.969627 | full: Bradford edition of Common Sense retains the original characteristics of the document--the author's use of capitalization (large and small),
+  [2] Pride and Prejudice - pg1342_chunk24 | local_cos=0.387348 | full: the most characteristic, the most eminently quintessential of its author's works; and for this contention in such narrow space as is permitted to me,
+  [3] Common Sense by Thomas Paine - pg147_chunk78 | local_cos=0.374120 | full: English constitution, we shall find them to be the base remains of two ancient tyrannies, compounded with some new republican materials. First.--The
+  [4] Common Sense by Thomas Paine - pg147_chunk85 | local_cos=0.348605 | full: the commons, by being appointed for that purpose, are either wiser or more worthy of confidence than the crown. But as the same constitution which
+  [5] Pride and Prejudice - pg1342_chunk1948 | local_cos=0.342745 | full: Collins's respectability, and Charlotte's prudent, steady character. Remember that she is one of a large family; that as to fortune it is a most
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 738/2000  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk320
+  query_kind: ORIGINAL
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk320::ORIGINAL
+  STORE_TEXT_MODE: head  head_chars=50
+  query_text_hash: 470449354d0012b5  query_vector_hash: a0741b8e98dafd5f
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): the hands of the infidels. No human being could have passed a happier childhood than myself. My parents were possessed by the very spirit of kindness
+  Query preview(full): the hands of the infidels. No human being could have passed a happier childhood than myself. My parents were possessed by the very spirit of kindness
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk1065 | azure_score=0.634930 | stored: youth. I almost envied him the possession of this  ...
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3859 | azure_score=0.633918 | stored: perfect peace, and they would have experienced and ...
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk311 | azure_score=0.626920 | stored: as they were unfolded to me, are among the earlies ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk2505 | azure_score=0.626111 | stored: and believe yourself bound in honour to fulfil the ...
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk1542 | azure_score=0.625769 | stored: how the father doted on the smiles of the infant,  ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk320 | local_cos=1.000000 | full: the hands of the infidels. No human being could have passed a happier childhood than myself. My parents were possessed by the very spirit of kindness
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk1065 | local_cos=0.425063 | full: youth. I almost envied him the possession of this modest and clear flame. It seemed to have consumed all thought of self so completely, that even
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3859 | local_cos=0.422341 | full: perfect peace, and they would have experienced and enjoyed that ineffable charm of our Oriental manner, a mixture of abandon and solicitude, of
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk311 | local_cos=0.404907 | full: as they were unfolded to me, are among the earliest sensations I can remember. On the birth of a second son, my junior by seven years, my parents
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk2505 | local_cos=0.403286 | full: and believe yourself bound in honour to fulfil the wishes of your parents, although they opposed themselves to your inclinations. But this is false
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 738/2000  base_chunk_id: Frankenstein  The Modern Prometheus - pg84_chunk320
+  query_kind: INSERTED
+  query_id: Frankenstein  The Modern Prometheus - pg84_chunk320::INSERTED::after10
+  STORE_TEXT_MODE: head  head_chars=50
+  insert_text: ' not at all ' after_word_requested=10 after_word_actual=10 word_count=26 insert_char_pos=52 appended_to_end=False
+  query_text_hash: f2fdee9dc464bfff  query_vector_hash: f2b86b27956be66f
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): the hands of the infidels. No human being could have passed a happier childhood than myself. My parents were possessed by the very spirit of kindness
+  Query preview(full): the hands of the infidels. No human being could have not at all  passed a happier childhood than myself. My parents were possessed by the very spirit of kindness
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk1065 | azure_score=0.636775 | stored: youth. I almost envied him the possession of this  ...
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3859 | azure_score=0.636397 | stored: perfect peace, and they would have experienced and ...
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk2505 | azure_score=0.630467 | stored: and believe yourself bound in honour to fulfil the ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk1887 | azure_score=0.627666 | stored: of kindness, and instead of injury I would bestow  ...
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk1542 | azure_score=0.625948 | stored: how the father doted on the smiles of the infant,  ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Frankenstein  The Modern Prometheus - pg84_chunk320 | local_cos=0.983169 | full: the hands of the infidels. No human being could have passed a happier childhood than myself. My parents were possessed by the very spirit of kindness
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk1065 | local_cos=0.429617 | full: youth. I almost envied him the possession of this modest and clear flame. It seemed to have consumed all thought of self so completely, that even
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3859 | local_cos=0.429036 | full: perfect peace, and they would have experienced and enjoyed that ineffable charm of our Oriental manner, a mixture of abandon and solicitude, of
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk2505 | local_cos=0.414289 | full: and believe yourself bound in honour to fulfil the wishes of your parents, although they opposed themselves to your inclinations. But this is false
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk1887 | local_cos=0.406847 | full: of kindness, and instead of injury I would bestow every benefit upon him with tears of gratitude at his acceptance. But that cannot be; the human
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 865/2000  base_chunk_id: A Room with a View by E. M. Forster - pg2641_chunk362
+  query_kind: INSERTED
+  query_id: A Room with a View by E. M. Forster - pg2641_chunk362::INSERTED::after10
+  STORE_TEXT_MODE: head  head_chars=50
+  insert_text: ' not at all ' after_word_requested=10 after_word_actual=5 word_count=5 insert_char_pos=31 appended_to_end=True
+  query_text_hash: 4a0f811629166e49  query_vector_hash: 6a00008fa0f318e6
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): church." She joined her cousin.
+  Query preview(full): church." She joined her cousin. not at all
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] A Room with a View by E. M. Forster - pg2641_chunk53 | azure_score=0.637667 | stored: and would have been glad to see the waiter if her  ...
+  [2] Pride and Prejudice - pg1342_chunk2234 | azure_score=0.635580 | stored: Sunday at church, and I need not say you will be d ...
+  [3] A Room with a View by E. M. Forster - pg2641_chunk1534 | azure_score=0.632973 | stored: should do without you." Several days passed. Then  ...
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk1972 | azure_score=0.630678 | stored: reassure yourself. I love my cousin tenderly and s ...
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk1032 | azure_score=0.629730 | stored: we heard that the poor victim had expressed a desi ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] A Room with a View by E. M. Forster - pg2641_chunk362 | local_cos=0.915986 | full: church." She joined her cousin.
+  [2] A Room with a View by E. M. Forster - pg2641_chunk53 | local_cos=0.432031 | full: and would have been glad to see the waiter if her cousin had permitted it. "Just fancy how small the world is. Summer Street, too, makes it so
+  [3] Pride and Prejudice - pg1342_chunk2234 | local_cos=0.426756 | full: Sunday at church, and I need not say you will be delighted with her. She is all affability and condescension, and I doubt not but you will be
+  [4] A Room with a View by E. M. Forster - pg2641_chunk1534 | local_cos=0.420317 | full: should do without you." Several days passed. Then she had a letter from Miss Bartlett. A coolness had sprung up between the two cousins, and they had
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk1972 | local_cos=0.414778 | full: reassure yourself. I love my cousin tenderly and sincerely. I never saw any woman who excited, as Elizabeth does, my warmest admiration and
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 956/2000  base_chunk_id: finance_bank_transformation_chunk69
+  query_kind: ORIGINAL
+  query_id: finance_bank_transformation_chunk69::ORIGINAL
+  STORE_TEXT_MODE: head  head_chars=50
+  query_text_hash: 290b0f7602bd2f07  query_vector_hash: a84484680fe7496b
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 3/5  Recall@5: 0.60
+  Base preview(full): digital ambassadors capable of guiding customers through the new platforms, and empowering financial advisors with advanced data insights derived
+  Query preview(full): digital ambassadors capable of guiding customers through the new platforms, and empowering financial advisors with advanced data insights derived
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] finance_bank_transformation_chunk123 | azure_score=0.655437 | stored: venerable position as a trusted, forward-thinking, ...
+  [2] finance_bank_transformation_chunk38 | azure_score=0.613089 | stored: routine transactional tasks that can now be effort ...
+  [3] story_1_chunk31 | azure_score=0.592248 | stored: offered a promotion. "Your honesty won us more sup ...
+  [4] finance_bank_transformation_chunk88 | azure_score=0.584202 | stored: is not merely completed; it is a continuously evol ...
+  [5] rag_test_doc_1_chunk78 | azure_score=0.583126 | stored: technical expertise of Jian Li, Project "Orion" wi ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] finance_bank_transformation_chunk69 | local_cos=1.000000 | full: digital ambassadors capable of guiding customers through the new platforms, and empowering financial advisors with advanced data insights derived
+  [2] finance_bank_transformation_chunk123 | local_cos=0.473792 | full: venerable position as a trusted, forward-thinking, and highly competitive financial institution, meticulously prepared to expertly navigate the
+  [3] finance_bank_transformation_chunk24 | local_cos=0.394746 | full: a deep, unwavering commitment to genuine customer-centricity. The initiative transcended the superficial notion of merely adding another mobile
+  [4] finance_bank_transformation_chunk38 | local_cos=0.368896 | full: routine transactional tasks that can now be effortlessly handled digitally." The initial phase involved an exhaustive, painstaking audit of all
+  [5] story_1_chunk31 | local_cos=0.310885 | full: offered a promotion. "Your honesty won us more support than silence ever would," the CEO said. "You’ve opened a conversation we needed to have."
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 1015/2000  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6232
+  query_kind: ORIGINAL
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6232::ORIGINAL
+  STORE_TEXT_MODE: head  head_chars=50
+  query_text_hash: 62f8994177690fdf  query_vector_hash: ec71419ea8ca044f
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): there are a separate mess hall, an assembly hall and a fine athletic field.
+  Query preview(full): there are a separate mess hall, an assembly hall and a fine athletic field.
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6175 | azure_score=0.625415 | stored: Forbes formulated a plan for the construction of a ...
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3829 | azure_score=0.625070 | stored: will convene in a suitable place, a national hymn  ...
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6096 | azure_score=0.610123 | stored: room, a tiny office, a little bath, a kitchen, and ...
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6297 | azure_score=0.603334 | stored: handsome building which serves as a rest house and ...
+  [5] The King in Yellow by Robert W. Chambers  - pg8492_chunk1283 | azure_score=0.596644 | stored: yard. "Mount!" cried a voice in Breton, and with a ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6232 | local_cos=0.999999 | full: there are a separate mess hall, an assembly hall and a fine athletic field.
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6175 | local_cos=0.401216 | full: Forbes formulated a plan for the construction of a group of government buildings, a mess hall and a large number of small and inexpensive cottages
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3829 | local_cos=0.400205 | full: will convene in a suitable place, a national hymn will inaugurate the exercises, after which appropriate addresses will be delivered; and second--at
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6096 | local_cos=0.361206 | full: room, a tiny office, a little bath, a kitchen, and nine single sleeping rooms. Three very small cottages, costing $375 each, were erected
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6297 | local_cos=0.342710 | full: handsome building which serves as a rest house and a girls' school. The sisters known as the "Belgian Canonist Missionaries" are erecting a building
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 1015/2000  base_chunk_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6232
+  query_kind: INSERTED
+  query_id: Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6232::INSERTED::after10
+  STORE_TEXT_MODE: head  head_chars=50
+  insert_text: ' not at all ' after_word_requested=10 after_word_actual=10 word_count=14 insert_char_pos=52 appended_to_end=False
+  query_text_hash: 3db0508b3a674b67  query_vector_hash: eada9e1b6f11830f
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): there are a separate mess hall, an assembly hall and a fine athletic field.
+  Query preview(full): there are a separate mess hall, an assembly hall and not at all  a fine athletic field.
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3829 | azure_score=0.615819 | stored: will convene in a suitable place, a national hymn  ...
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6175 | azure_score=0.603324 | stored: Forbes formulated a plan for the construction of a ...
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6096 | azure_score=0.597524 | stored: room, a tiny office, a little bath, a kitchen, and ...
+  [4] The King in Yellow by Robert W. Chambers  - pg8492_chunk1283 | azure_score=0.591586 | stored: yard. "Mount!" cried a voice in Breton, and with a ...
+  [5] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6145 | azure_score=0.589300 | stored: An outdoor amphitheatre which seats a thousand per ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6232 | local_cos=0.929750 | full: there are a separate mess hall, an assembly hall and a fine athletic field.
+  [2] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk3829 | local_cos=0.376074 | full: will convene in a suitable place, a national hymn will inaugurate the exercises, after which appropriate addresses will be delivered; and second--at
+  [3] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6175 | local_cos=0.342568 | full: Forbes formulated a plan for the construction of a group of government buildings, a mess hall and a large number of small and inexpensive cottages
+  [4] Philippines Past and Present Volume 1 of 2  Worcester  - pg12077_chunk6096 | local_cos=0.326813 | full: room, a tiny office, a little bath, a kitchen, and nine single sleeping rooms. Three very small cottages, costing $375 each, were erected
+  [5] The King in Yellow by Robert W. Chambers  - pg8492_chunk1283 | local_cos=0.309333 | full: yard. "Mount!" cried a voice in Breton, and with a clatter of hoofs the two falconers, with falcons upon their wrists, rode into the courtyard among
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 1056/2000  base_chunk_id: The King in Yellow by Robert W. Chambers  - pg8492_chunk1025
+  query_kind: ORIGINAL
+  query_id: The King in Yellow by Robert W. Chambers  - pg8492_chunk1025::ORIGINAL
+  STORE_TEXT_MODE: head  head_chars=50
+  query_text_hash: e6300300a72c27f7  query_vector_hash: d7757db1e6a4a17a
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): would decide her future for her, and I prayed inwardly that fate would keep her away from men like me and throw into her path nothing but Ed Burkes
+  Query preview(full): would decide her future for her, and I prayed inwardly that fate would keep her away from men like me and throw into her path nothing but Ed Burkes
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] A Room with a View by E. M. Forster - pg2641_chunk636 | azure_score=0.642086 | stored: a high opinion of the destiny of woman--Mr. Eager! ...
+  [2] Pride and Prejudice - pg1342_chunk4165 | azure_score=0.634526 | stored: to be her husband might then have rested in its pr ...
+  [3] The King in Yellow by Robert W. Chambers  - pg8492_chunk1017 | azure_score=0.632561 | stored: steer clear of complications, because I wished her ...
+  [4] Pride and Prejudice - pg1342_chunk4801 | azure_score=0.628168 | stored: houses; and what is to divide them?--the upstart p ...
+  [5] Frankenstein  The Modern Prometheus - pg84_chunk1032 | azure_score=0.626605 | stored: we heard that the poor victim had expressed a desi ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] The King in Yellow by Robert W. Chambers  - pg8492_chunk1025 | local_cos=1.000000 | full: would decide her future for her, and I prayed inwardly that fate would keep her away from men like me and throw into her path nothing but Ed Burkes
+  [2] A Room with a View by E. M. Forster - pg2641_chunk636 | local_cos=0.442558 | full: a high opinion of the destiny of woman--Mr. Eager! Why, how nice! What a pleasant surprise!" "Ah, not for me," said the chaplain blandly, "for I have
+  [3] Pride and Prejudice - pg1342_chunk4165 | local_cos=0.423876 | full: to be her husband might then have rested in its proper place. He was seriously concerned that a cause of so little advantage to anyone should be
+  [4] The King in Yellow by Robert W. Chambers  - pg8492_chunk1017 | local_cos=0.419021 | full: steer clear of complications, because I wished her well, and then also I had a selfish desire to retain the best model I had. I knew that mashing, as
+  [5] Pride and Prejudice - pg1342_chunk4801 | local_cos=0.407816 | full: houses; and what is to divide them?--the upstart pretensions of a young woman without family, connections, or fortune! Is this to be endured? But it
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 1163/2000  base_chunk_id: finance_bank_transformation_chunk24
+  query_kind: ORIGINAL
+  query_id: finance_bank_transformation_chunk24::ORIGINAL
+  STORE_TEXT_MODE: head  head_chars=50
+  query_text_hash: 041b8dba1817df15  query_vector_hash: 68ed97a3fbf4a8d7
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 3/5  Recall@5: 0.60
+  Base preview(full): a deep, unwavering commitment to genuine customer-centricity. The initiative transcended the superficial notion of merely adding another mobile
+  Query preview(full): a deep, unwavering commitment to genuine customer-centricity. The initiative transcended the superficial notion of merely adding another mobile
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] finance_bank_transformation_chunk88 | azure_score=0.634448 | stored: is not merely completed; it is a continuously evol ...
+  [2] rag_test_doc_1_chunk5 | azure_score=0.618959 | stored: a moment of rare and potent clarity, Project "Orio ...
+  [3] rag_test_doc_1_chunk78 | azure_score=0.611873 | stored: technical expertise of Jian Li, Project "Orion" wi ...
+  [4] finance_bank_transformation_chunk123 | azure_score=0.608705 | stored: venerable position as a trusted, forward-thinking, ...
+  [5] rag_test_doc_1_chunk2 | azure_score=0.606030 | stored: sense of purpose that we officially announce the c ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] finance_bank_transformation_chunk24 | local_cos=1.000000 | full: a deep, unwavering commitment to genuine customer-centricity. The initiative transcended the superficial notion of merely adding another mobile
+  [2] finance_bank_transformation_chunk88 | local_cos=0.423921 | full: is not merely completed; it is a continuously evolving journey, moving confidently beyond initial implementation into a phase of perpetual innovation
+  [3] finance_bank_transformation_chunk69 | local_cos=0.394789 | full: digital ambassadors capable of guiding customers through the new platforms, and empowering financial advisors with advanced data insights derived
+  [4] rag_test_doc_1_chunk5 | local_cos=0.384090 | full: a moment of rare and potent clarity, Project "Orion" represents Innovate Inc.'s most ambitious and technically demanding foray into satellite
+  [5] rag_test_doc_1_chunk78 | local_cos=0.366085 | full: technical expertise of Jian Li, Project "Orion" will exceed all expectations. In the words of our CEO, "Some companies write mission statements. We
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 1585/2000  base_chunk_id: The King in Yellow by Robert W. Chambers  - pg8492_chunk596
+  query_kind: ORIGINAL
+  query_id: The King in Yellow by Robert W. Chambers  - pg8492_chunk596::ORIGINAL
+  STORE_TEXT_MODE: head  head_chars=50
+  query_text_hash: 0a59d77c3db59d8b  query_vector_hash: a702e6de878fd6d2
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): spinet in good repair stood by the window. There were stands of weapons, some old and dull, others bright and modern, festoons of Indian and Turkish
+  Query preview(full): spinet in good repair stood by the window. There were stands of weapons, some old and dull, others bright and modern, festoons of Indian and Turkish
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk1167 | azure_score=0.634099 | stored: in a long aspiration. "Some of the pilgrims behind ...
+  [2] The King in Yellow by Robert W. Chambers  - pg8492_chunk2326 | azure_score=0.627012 | stored: and silver; ponderous jangling cavalrymen all over ...
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk1562 | azure_score=0.623143 | stored: grated window in an unguarded part of the building ...
+  [4] The King in Yellow by Robert W. Chambers  - pg8492_chunk2895 | azure_score=0.614105 | stored: lifted the lamp and gliding past him slipped down  ...
+  [5] Heart of Darkness by Joseph Conrad - pg219_chunk255 | azure_score=0.612486 | stored: and the short ends behind waggled to and fro like  ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] The King in Yellow by Robert W. Chambers  - pg8492_chunk596 | local_cos=0.999999 | full: spinet in good repair stood by the window. There were stands of weapons, some old and dull, others bright and modern, festoons of Indian and Turkish
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk1167 | local_cos=0.422922 | full: in a long aspiration. "Some of the pilgrims behind the stretcher carried his arms--two shot-guns, a heavy rifle, and a light revolver-carbine--the
+  [3] The King in Yellow by Robert W. Chambers  - pg8492_chunk2326 | local_cos=0.405092 | full: and silver; ponderous jangling cavalrymen all over dust, pastry cooks' boys skipping along with utter disregard for the safety of the basket balanced
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk1562 | local_cos=0.395025 | full: grated window in an unguarded part of the building, which lighted the dungeon of the unfortunate Muhammadan, who, loaded with chains, waited in
+  [5] The King in Yellow by Robert W. Chambers  - pg8492_chunk2895 | local_cos=0.371954 | full: lifted the lamp and gliding past him slipped down the polished stairs to the hallway. Then unchaining the bolts, she drew open the iron wicket.
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 1585/2000  base_chunk_id: The King in Yellow by Robert W. Chambers  - pg8492_chunk596
+  query_kind: INSERTED
+  query_id: The King in Yellow by Robert W. Chambers  - pg8492_chunk596::INSERTED::after10
+  STORE_TEXT_MODE: head  head_chars=50
+  insert_text: ' not at all ' after_word_requested=10 after_word_actual=10 word_count=26 insert_char_pos=53 appended_to_end=False
+  query_text_hash: 2c301d4e58fe45e6  query_vector_hash: 8bec5018389839f8
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): spinet in good repair stood by the window. There were stands of weapons, some old and dull, others bright and modern, festoons of Indian and Turkish
+  Query preview(full): spinet in good repair stood by the window. There were not at all  stands of weapons, some old and dull, others bright and modern, festoons of Indian and Turkish
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] Heart of Darkness by Joseph Conrad - pg219_chunk1167 | azure_score=0.636893 | stored: in a long aspiration. "Some of the pilgrims behind ...
+  [2] The King in Yellow by Robert W. Chambers  - pg8492_chunk2326 | azure_score=0.628902 | stored: and silver; ponderous jangling cavalrymen all over ...
+  [3] Frankenstein  The Modern Prometheus - pg84_chunk1562 | azure_score=0.620938 | stored: grated window in an unguarded part of the building ...
+  [4] Heart of Darkness by Joseph Conrad - pg219_chunk255 | azure_score=0.614056 | stored: and the short ends behind waggled to and fro like  ...
+  [5] The King in Yellow by Robert W. Chambers  - pg8492_chunk2895 | azure_score=0.613440 | stored: lifted the lamp and gliding past him slipped down  ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] The King in Yellow by Robert W. Chambers  - pg8492_chunk596 | local_cos=0.981712 | full: spinet in good repair stood by the window. There were stands of weapons, some old and dull, others bright and modern, festoons of Indian and Turkish
+  [2] Heart of Darkness by Joseph Conrad - pg219_chunk1167 | local_cos=0.430701 | full: in a long aspiration. "Some of the pilgrims behind the stretcher carried his arms--two shot-guns, a heavy rifle, and a light revolver-carbine--the
+  [3] The King in Yellow by Robert W. Chambers  - pg8492_chunk2326 | local_cos=0.409857 | full: and silver; ponderous jangling cavalrymen all over dust, pastry cooks' boys skipping along with utter disregard for the safety of the basket balanced
+  [4] Frankenstein  The Modern Prometheus - pg84_chunk1562 | local_cos=0.389265 | full: grated window in an unguarded part of the building, which lighted the dungeon of the unfortunate Muhammadan, who, loaded with chains, waited in
+  [5] Heart of Darkness by Joseph Conrad - pg219_chunk255 | local_cos=0.371624 | full: and the short ends behind waggled to and fro like tails. I could see every rib, the joints of their limbs were like knots in a rope; each had an iron
+
+--------------------------------------------------------------------------------------------------------------
+
+BASE 1902/2000  base_chunk_id: medical_research_report_chunk13
+  query_kind: ORIGINAL
+  query_id: medical_research_report_chunk13::ORIGINAL
+  STORE_TEXT_MODE: head  head_chars=50
+  query_text_hash: 8d56a7314c7575e1  query_vector_hash: 6c11e7cec8f17602
+  ANN_has_base: False (rank=None) | LOCAL_has_base: True (rank=1)
+  Overlap@5: 4/5  Recall@5: 0.80
+  Base preview(full): most formidable adversaries. Often detected only in its late stages, its prognosis remained grim, its cells notoriously resistant to conventional
+  Query preview(full): most formidable adversaries. Often detected only in its late stages, its prognosis remained grim, its cells notoriously resistant to conventional
+
+--- AZURE ANN TOP-K (contentStored) ---
+  [1] medical_research_report_chunk97 | azure_score=0.686247 | stored: pave the way for similar precisely targeted treatm ...
+  [2] medical_research_report_chunk28 | azure_score=0.680146 | stored: had long been the holy grail of oncology, a vision ...
+  [3] medical_research_report_chunk10 | azure_score=0.642804 | stored: to silence the most aggressive whispers of all: th ...
+  [4] medical_research_report_chunk84 | azure_score=0.637730 | stored: future of oncology." The preparations for the next ...
+  [5] medical_research_report_chunk35 | azure_score=0.632735 | stored: for prestigious journals; it was a beacon of hope, ...
+
+--- LOCAL EXACT COSINE TOP-K (full text previews) ---
+  [1] medical_research_report_chunk13 | local_cos=1.000000 | full: most formidable adversaries. Often detected only in its late stages, its prognosis remained grim, its cells notoriously resistant to conventional
+  [2] medical_research_report_chunk97 | local_cos=0.542805 | full: pave the way for similar precisely targeted treatments for other hard-to-treat, aggressive malignancies that currently defy conventional approaches.
+  [3] medical_research_report_chunk28 | local_cos=0.529456 | full: had long been the holy grail of oncology, a vision pursued with fervent dedication but rarely, if ever, truly achieved until now. The potential
+  [4] medical_research_report_chunk10 | local_cos=0.443959 | full: to silence the most aggressive whispers of all: the relentless, insidious advance of pancreatic cancer. This quiet, momentous observation marked the
+  [5] medical_research_report_chunk84 | local_cos=0.432095 | full: future of oncology." The preparations for the next phase, involving a significantly larger patient group and varying dosages to establish optimal
+
+--------------------------------------------------------------------------------------------------------------
+
